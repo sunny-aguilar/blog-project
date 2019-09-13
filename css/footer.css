@@ -1,0 +1,17 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+    /* height: 100vh; */
+    padding: 0.5in 0;}
+
+footer * {
+    grid-column: start / end; 
+    /* grid-column is shorthand for properties below*/
+    /* grid-column-start: start;
+    grid-column-start: end; */ }
+    
+    
+@media (max-width: 8.5in) {
+    footer { 
+        grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr; }
+}
